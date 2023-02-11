@@ -14,11 +14,12 @@ function auth(){
   var email=document.getElementById("email").value;
   var password=document.getElementById("password").value;
   if(email=="admin@gmail.com"&& password=="admin123"){
-    window.open('home.html');
-    alert("Login Successfully")
+    window.location = "home.html";
+    alert("Login Successfully");
+    return false;
   }
   else{
-    alert("invalid user name password")
-    return;
+    alert("invalid user name password");
+    return false;
   }
 }
